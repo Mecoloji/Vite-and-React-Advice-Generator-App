@@ -1,4 +1,6 @@
 import "./adviceContainer.css";
+import diceIcon from "../images/icon-dice.svg"
+import patternDivider from "../images/pattern-divider-desktop.svg"
 
 const AdviceContainer = ({ slip, onClick }) => {
   return (
@@ -7,11 +9,11 @@ const AdviceContainer = ({ slip, onClick }) => {
       <span className="advice">“ {slip.advice} ”</span>
       <img
         className="divider"
-        src="/src/images/pattern-divider-desktop.svg"
+        src={patternDivider}
         alt=""
       />
       <div className="dice-btn" onClick={onClick}>
-        <img src="/src/images/icon-dice.svg" alt="" />
+        <img src={diceIcon} alt="" />
       </div>
     </div>
   );
